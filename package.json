@@ -1,0 +1,22 @@
+{
+  "name": "elm-play",
+  "version": "1.0.0",
+  "description": "Initial elm adventures",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --files 'index.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielflorit/elm-play.git"
+  },
+  "author": "Gabriel Florit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielflorit/elm-play/issues"
+  },
+  "homepage": "https://github.com/gabrielflorit/elm-play#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1"
+  }
+}
