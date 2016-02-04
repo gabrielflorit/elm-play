@@ -1,22 +1,10 @@
 module Main (..) where
 
-import Html
-import Mouse
+import Html exposing (Html)
+import FileChooser exposing (update, view)
+import StartApp.Simple exposing (start)
 
 
-view : Int -> Html.Html
-view x =
-  x
-    |> double
-    |> toString
-    |> Html.text
-
-
-double : Int -> Int
-double x =
-  x * 2
-
-
-main : Signal.Signal Html.Html
+main : Signal Html.Html
 main =
-  Signal.map view Mouse.x
+  start { model = 0, update = update, view = view }
